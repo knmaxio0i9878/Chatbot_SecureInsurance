@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SecureLife Insurance</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<header>
+    <h2>SecureLife Insurance</h2>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Plans</a>
+        <a href="#">Claims</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Protect What Matters Most</h1>
+    <p>Simple and reliable health insurance solutions for your family.</p>
+    <button>Explore Plans</button>
+</section>
+
+<section class="content">
+    <h2>Why SecureLife?</h2>
+    <p>Health coverage, cashless hospitalization and dedicated customer support.</p>
+</section>
+
+<!-- Chatbot -->
+<div id="chatbot">
+
+    <div id="chat-header">
+        Insurance Assistant
+        <span onclick="toggleChat()">×</span>
+    </div>
+
+    <div id="chat-messages">
+        <div class="bot">Hello! Ask me anything about our insurance policy.</div>
+    </div>
+
+    <div id="chat-input">
+        <input id="question" placeholder="Ask about insurance...">
+        <button onclick="askQuestion()">Send</button>
+    </div>
+
+</div>
+
+<button id="chat-button" onclick="toggleChat()">💬</button>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>
